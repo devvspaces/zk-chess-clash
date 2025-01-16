@@ -1,7 +1,7 @@
 import { PublicKey } from "@solana/web3.js";
 
 export const DEFAULT_SOL_ADDRESS: PublicKey = new PublicKey(
-  process.env.APP_WALLET,
+  process.env.APP_WALLET!,
 );
 
 export const DEFAULT_SOL_AMOUNT: number = 0;
@@ -22,3 +22,8 @@ export const SPL_MAP = {
     decimals: 5,
   },
 };
+
+export const DRAW = "draw";
+export const MATE = "mate";
+export const CHARGE_PERCENTAGE = 1;
+export const CAP_AMOUNT = 0.05; // 0.05 SOL
